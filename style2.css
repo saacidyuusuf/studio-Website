@@ -95,6 +95,10 @@ nav ul li a{
     margin-bottom: 1.2rem;
 }
 
+.show-text p{
+    margin-bottom: 1rem;
+}
+
 /* .show-img{
     overflow: hidden;
 } */
@@ -110,9 +114,10 @@ nav ul li a{
     color: black;
     background-color: #15aca4;
     padding: 6px 20px;
+    font-size: 1.2rem;
     border-color: #19837e;
     border-radius: 12px;
-    border: none;
+    border: none;text-decoration: none;
 }
 span{
     color: #15aca4;
@@ -158,9 +163,9 @@ span{
     }
     .navbar{
         position: absolute;
-        top: 100%;
+        top: 0%;
         right: -100%;
-        height: 110h;
+        height: 130vh;
         width: 240px;
         background-color: #1cb8b0;
         display: flex;
@@ -276,6 +281,10 @@ span{
     margin-bottom: 1.45rem;
 }
 
+.col-feature h3{
+    color: #4b4848;
+}
+
 .col-feature img{
     display: block;
     border-radius: 8px ;
@@ -359,6 +368,7 @@ span{
 
 .director-info img{
     border-radius: 50%;
+    aspect-ratio: 1/1;
 }
 
 .director-talk h2{
@@ -433,6 +443,8 @@ span{
 
 .test-img img{
     border-radius: 50%;
+    aspect-ratio: 1/1;
+    width: 4rem;
 }
 
 .test-info{
@@ -917,6 +929,138 @@ span{
         font-size: 3rem;
     }
 }
+/* about us */
+.sec {
+    color: white;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+}
+
+.title h1{
+    text-align: center;
+    margin-bottom: 1.4rem;
+    color: #a06610;
+}
+
+.title h1::after{
+    text-align: center;
+    content: "";
+    display: block;
+    margin: auto;
+    transition: .3s;
+    height: 4px;
+    width: 10%;
+    background-color: rgb(17, 16, 16);
+}
+
+.title h1{
+    font-size: 3rem;
+    color: #15aca4;
+}
+
+.title p {
+    text-align: center;
+    margin-top: 0.30rem;
+    color: lightgray;
+}
+
+.center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.content {
+    color: black;
+    display: none;
+    padding-left: 10px;
+    padding-bottom: 1rem;
+    padding-right: 10px;
+}
+
+.content p{
+    line-height: 1.3;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #110c0c;
+}
+
+.content ul li{
+    list-style-type: none;
+}
+
+.about {
+    background-color: #efefef;
+    border-radius: 12px;
+}
+
+.content h4 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    padding-top: 0;
+}
+
+.content p {
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.imgabout img {
+    width: 100%;
+}
+
+.btn-container {
+    display: flex;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.tab-btn {
+    background-color: lightgrey;
+    padding: 5px 15px;
+    border: none;
+    font-size: 25px;
+}
+
+.tab-btn.active {
+    background-color: white;
+}
+
+.active {
+    display: block;
+}
+
+
+@media (max-width: 700px) {
+    .center {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .img img {
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 12px;
+    }
+    .title{
+        color: white;
+    }
+}
+
+@media (max-width: 1010px) {
+    .center {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* about end */
+
+
 /*contact*/
 
 
@@ -950,16 +1094,6 @@ span{
     gap: 10rem;
 }
 
-/* .address{
-    grid-column: span 1 / 3;
-    column-gap: 3rem;
-}
-
-.contact-input{
-    grid-row: span 2 / 3;
-    
-    
-} */
 
 .address-haye{
     text-align: center;
@@ -996,6 +1130,7 @@ span{
     padding: 12px;
     font-size: 17px;
     font-weight: 500;
+    outline: none;
     border-radius: 10px;
     border-color: #41d4cd;
 }
@@ -1004,6 +1139,7 @@ span{
     width: 150%;
     padding: 5px;
     font-size: 17px;
+    outline: none;
     border-radius: 10px;
     border-color: #41d4cd;
 }
@@ -1012,6 +1148,7 @@ span{
     padding: 15px;
     margin-top: 0.20rem;
     border-radius: 12px;
+    border: none;
     background-color: #66d8d2;
     font-weight: 700;
 }
